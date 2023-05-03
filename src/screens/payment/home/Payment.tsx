@@ -44,7 +44,10 @@ const Payment = (): JSX.Element => {
   return (
     <View style={[defaultStyles.container, paymentStyles.container]}>
       <View style={paymentStyles.addSection}>
-        <Button mode="contained" icon={'plus'}>
+        <Button
+          mode="contained"
+          icon={'plus'}
+          onPress={() => navigation.navigate(routeNames.PAYMENT.ADD as never)}>
           Add Payment
         </Button>
       </View>

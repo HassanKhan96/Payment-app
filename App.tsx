@@ -16,6 +16,7 @@ import globalColors from './src/styles/colors';
 import fontsConfig from './src/styles/font';
 import {Provider as ReduxProvider} from 'react-redux';
 import {store} from './src/store/store';
+import auth from '@react-native-firebase/auth';
 
 const theme = {
   ...MD3LightTheme,
